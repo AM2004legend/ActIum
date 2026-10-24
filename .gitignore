@@ -1,0 +1,31 @@
+# generated preview — regenerate with tools/generate_icons.py, not a build input
+tools/preview.png
+tools/__pycache__/
+
+# ide
+# android/.idea is partly tracked on purpose (code style, inspections);
+# android/.gitignore handles the churny ones
+.vscode/
+
+# os
+Thumbs.db
+.DS_Store
+
+# the sideloaded Gemma model (2.6 GB), never committed
+models/
+
+# JVM crash reports (a Gradle daemon that ran out of memory writes these where it was started)
+hs_err_pid*.log
+replay_pid*.log
+
+# model weights and training output: never committed
+*.litertlm
+*.task
+*.safetensors
+*.gguf
+*.bin
+training/out/
+training/.venv/
+
+# local Salesforce CLI cache, unrelated to Actum
+.sf/
