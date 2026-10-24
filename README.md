@@ -460,7 +460,7 @@ The phone benchmarks (held-out, speed, development set) are in
 
 ```mermaid
 flowchart LR
-    subgraph android/app/src/main/java/com/actum
+    subgraph app["android/app/src/main/java/com/actum"]
         capture["capture/<br/>share sheet · clipboard tile"] --> ocr["ocr/<br/>ML Kit · PDF text"]
         ocr --> embed["embed/<br/>EmbeddingGemma · search"]
         voice["voice/<br/>on-device speech"] --> act
