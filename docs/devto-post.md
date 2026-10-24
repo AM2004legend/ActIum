@@ -2,6 +2,7 @@
 title: Actum: I say one sentence, my phone does the boring part, and nothing ever leaves it
 published: false
 tags: devchallenge, hf26challenge, gemma, android
+cover_image: https://raw.githubusercontent.com/AM2004legend/ActIum/main/docs/cover.png
 ---
 
 *This is a submission for the [Hacktoberfest Open-Source AI Challenge Week 3: Slow and Steady](https://dev.to/challenges/hacktoberfest-week3-2026-10-19)*
