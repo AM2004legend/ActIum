@@ -18,7 +18,7 @@ The lazy part is that it also works ahead. A saved item is read in the backgroun
 
 ## Demo
 
-<!-- TODO: video link (real phone, airplane mode on) -->
+{% embed https://youtube.com/shorts/bE6Lw7GLZKM %}
 Project page: https://am2004legend.github.io/ActIum/
 
 ## Code

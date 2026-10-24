@@ -15,6 +15,18 @@ A language model, **Google's Gemma 4 E2B**, runs on the phone itself. The app ho
 > repository is that earlier work, imported as it stood. Everything after it was done
 > during the challenge week. [What's new this week](#whats-new-for-hacktoberfest-2026).
 
+### ▶ [Watch the demo (YouTube Short)](https://youtube.com/shorts/bE6Lw7GLZKM)
+
+| 1. Say it, in one breath | 2. One card per action | 3. Tap what you want | 4. It lands on your calendar |
+| --- | --- | --- | --- |
+| ![Spoken request, transcribed by the phone's own recognizer](docs/screenshots/1-you-said.jpg) | ![To-do, alarm and calendar cards, each field verified](docs/screenshots/2-cards.jpg) | ![To-do added, alarm skipped, event opened in the calendar](docs/screenshots/3-confirmed.jpg) | ![Actum's month calendar with marked days](docs/screenshots/4-calendar.jpg) |
+
+One spoken sentence (*"I need to buy rice, I need to take my meds at 9 p.m., and also
+need to wake up at 6 a.m. tomorrow, mark my calendar for 4th of November as it's my
+birthday"*) became three cards, read on the phone in 4 seconds. Every field shows the
+words it came from. The alarm was skipped, and the card says so plainly: *"Skipped.
+Nothing was done."*
+
 ---
 
 ## Why it exists

@@ -476,8 +476,12 @@ as prior work, then real commits for the new work. Ask the owner before every co
 2. [done] Phone held-out run → `benchmarks/heldout.md`: rules 34, Gemma 69, hybrid 72 of
    100; faults found (injection, negation, duplicates) recorded, not tuned against.
    `docs/development-decisions.md`, `docs/devto-post.md` (draft), `site/index.html` written.
-3. [ ] Owner made repo `AM2004legend/ActIum`, first commit `b93b5c6` = import. Pending
-   owner OK: untrack `.sf/` (Salesforce cache, leaks org id), commit benchmark + docs.
+3. [done locally] History rebuilt on `main`: `8e2bd47` import (prior work, no `.sf/`),
+   `8d8cc39` benchmark code, `62b88bf` phone results, `4745a68` README/docs/site. 329 unit
+   tests pass. **Push failed: "Repository not found"** for
+   `github.com/AM2004legend/ActIum`. Owner must create it (empty, no README), then
+   `git push --force -u origin main`. Then Settings → Pages → Source: GitHub Actions
+   (workflow `.github/workflows/pages.yml` publishes `site/`).
 4. [dropped] Entire: owner cancelled it. Only category entered: Best Use of Gemma.
 5. [dropped] .tech: card not accepted at checkout. Use GitHub Pages for `site/` instead.
 6. [ ] DEV post draft (writing is weighted most). Deadline 2026-10-25 23:59 PDT.
