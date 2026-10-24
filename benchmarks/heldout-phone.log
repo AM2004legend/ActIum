@@ -1,0 +1,339 @@
+﻿--------- beginning of main
+10-24 21:25:13.334 28486 28506 I ActumEval: {"model":"Gemma 4 E2B","load_ms":5718}
+10-24 21:25:13.431 28486 28506 I ActumEval: {"id":"H001","path":"rules","answered":true,"actions":[{"intent":"ALARM","fields":{"time_text":"6:40 am"}}],"ms":82}
+10-24 21:25:23.234 28486 28508 I ActumEval: {"id":"H001","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"ALARM","fields":{"time_text":"6:40 am"}}],"ms":3643}
+10-24 21:25:23.235 28486 28508 I ActumEval: {"id":"H001","path":"hybrid","answered":true,"actions":[{"intent":"ALARM","fields":{"time_text":"6:40 am"}}],"ms":82}
+10-24 21:25:23.235 28486 28508 I ActumEval: {"id":"H002","path":"rules","answered":true,"actions":[{"intent":"ALARM","fields":{"time_text":"5 am"}}],"ms":1}
+10-24 21:25:32.573 28486 28506 I ActumEval: {"id":"H002","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"alarm setting"}}],"ms":5271}
+10-24 21:25:32.574 28486 28506 I ActumEval: {"id":"H002","path":"hybrid","answered":true,"actions":[{"intent":"ALARM","fields":{"time_text":"5 am"}}],"ms":1}
+10-24 21:25:32.574 28486 28506 I ActumEval: {"id":"H003","path":"rules","answered":true,"actions":[{"intent":"ALARM","fields":{"time_text":"8:15","date_text":"tomorrow"}}],"ms":1}
+10-24 21:25:42.002 28486 28507 I ActumEval: {"id":"H003","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"ALARM","fields":{"label":"wake me","time_text":"8:15","date_text":"tomorrow"}}],"ms":5069}
+10-24 21:25:42.003 28486 28507 I ActumEval: {"id":"H003","path":"hybrid","answered":true,"actions":[{"intent":"ALARM","fields":{"time_text":"8:15","date_text":"tomorrow"}}],"ms":1}
+10-24 21:25:42.004 28486 28507 I ActumEval: {"id":"H004","path":"rules","answered":true,"actions":[{"intent":"TODO","fields":{"items":["milk eggs","bread"],"list_name":"shopping"}}],"ms":1}
+10-24 21:25:50.479 28486 28507 I ActumEval: {"id":"H004","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["milk","eggs","bread"]}}],"ms":3807}
+10-24 21:25:50.479 28486 28507 I ActumEval: {"id":"H004","path":"hybrid","answered":true,"actions":[{"intent":"TODO","fields":{"items":["milk eggs","bread"],"list_name":"shopping"}}],"ms":1}
+10-24 21:25:50.480 28486 28507 I ActumEval: {"id":"H005","path":"rules","answered":true,"actions":[{"intent":"EXPENSE","fields":{"amount":"340","counterparty_or_merchant":"lunch","direction":"spent"}}],"ms":0}
+10-24 21:26:00.698 28486 28506 I ActumEval: {"id":"H005","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EXPENSE","fields":{"amount":340,"category":"food","direction":"spent"}}],"ms":4947}
+10-24 21:26:00.698 28486 28506 I ActumEval: {"id":"H005","path":"hybrid","answered":true,"actions":[{"intent":"EXPENSE","fields":{"amount":"340","counterparty_or_merchant":"lunch","direction":"spent"}}],"ms":0}
+10-24 21:26:00.704 28486 28506 I ActumEval: {"id":"H006","path":"rules","answered":true,"actions":[{"intent":"ALARM","fields":{"time_text":"12 minutes","label":"turn off the stove"}}],"ms":0}
+10-24 21:26:12.810 28486 28507 I ActumEval: {"id":"H006","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"ALARM","fields":{"label":"turn off the stove","time_text":"12 minutes from now","date_text":null}}],"ms":5892}
+10-24 21:26:12.810 28486 28507 I ActumEval: {"id":"H006","path":"hybrid","answered":true,"actions":[{"intent":"ALARM","fields":{"time_text":"12 minutes","label":"turn off the stove"}}],"ms":0}
+10-24 21:26:12.811 28486 28507 I ActumEval: {"id":"H007","path":"rules","answered":true,"actions":[{"intent":"ALARM","fields":{"time_text":"25 minutes"}}],"ms":1}
+10-24 21:26:21.383 28486 28506 I ActumEval: {"id":"H007","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"ALARM","fields":{"time_text":"25 minutes"}}],"ms":3532}
+10-24 21:26:21.383 28486 28506 I ActumEval: {"id":"H007","path":"hybrid","answered":true,"actions":[{"intent":"ALARM","fields":{"time_text":"25 minutes"}}],"ms":1}
+10-24 21:26:21.384 28486 28506 I ActumEval: {"id":"H008","path":"rules","answered":true,"actions":[{"intent":"ALARM","fields":{"time_text":"3 mins"}}],"ms":1}
+10-24 21:26:29.530 28486 28507 I ActumEval: {"id":"H008","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"ALARM","fields":{"time_text":"3 mins later"}}],"ms":3488}
+10-24 21:26:29.530 28486 28507 I ActumEval: {"id":"H008","path":"hybrid","answered":true,"actions":[{"intent":"ALARM","fields":{"time_text":"3 mins"}}],"ms":1}
+10-24 21:26:29.532 28486 28507 I ActumEval: {"id":"H009","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:26:38.893 28486 28507 I ActumEval: {"id":"H009","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"ALARM","fields":{"label":"laundry","time_text":"1 hour from now"}}],"ms":4662}
+10-24 21:26:38.893 28486 28507 I ActumEval: {"id":"H009","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"ALARM","fields":{"label":"laundry","time_text":"1 hour from now"}}],"ms":4662}
+10-24 21:26:38.894 28486 28507 I ActumEval: {"id":"H010","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:26:48.074 28486 28506 I ActumEval: {"id":"H010","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"ALARM","fields":{"label":"alarm","time_text":"7am","date_text":"tmrw"}}],"ms":4596}
+10-24 21:26:48.075 28486 28506 I ActumEval: {"id":"H010","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"ALARM","fields":{"label":"alarm","time_text":"7am","date_text":"tmrw"}}],"ms":4596}
+10-24 21:26:48.076 28486 28506 I ActumEval: {"id":"H011","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:26:56.793 28486 28510 I ActumEval: {"id":"H011","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"meeting with the landlord","date_text":"Thursday"}}],"ms":4198}
+10-24 21:26:56.794 28486 28510 I ActumEval: {"id":"H011","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"meeting with the landlord","date_text":"Thursday"}}],"ms":4198}
+10-24 21:26:56.795 28486 28510 I ActumEval: {"id":"H012","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:27:04.872 28486 28510 I ActumEval: {"id":"H012","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["schedule dog vaccination appointment"]}}],"ms":3203}
+10-24 21:27:04.872 28486 28510 I ActumEval: {"id":"H012","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["schedule dog vaccination appointment"]}}],"ms":3203}
+10-24 21:27:04.873 28486 28510 I ActumEval: {"id":"H013","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:27:14.049 28486 28506 I ActumEval: {"id":"H013","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"Ananya's wedding reception","date_text":"14 December"}}],"ms":4500}
+10-24 21:27:14.049 28486 28506 I ActumEval: {"id":"H013","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"Ananya's wedding reception","date_text":"14 December"}}],"ms":4500}
+10-24 21:27:14.051 28486 28506 I ActumEval: {"id":"H014","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:27:24.184 28486 28506 I ActumEval: {"id":"H014","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"car service booked","date_text":"Monday","time_text":"9:30","location":"Tata garage"}}],"ms":5545}
+10-24 21:27:24.184 28486 28506 I ActumEval: {"id":"H014","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"car service booked","date_text":"Monday","time_text":"9:30","location":"Tata garage"}}],"ms":5545}
+10-24 21:27:24.185 28486 28506 I ActumEval: {"id":"H015","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:27:32.875 28486 28507 I ActumEval: {"id":"H015","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"interview","time_text":"3 pm"}}],"ms":3685}
+10-24 21:27:32.875 28486 28507 I ActumEval: {"id":"H015","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"interview","time_text":"3 pm"}}],"ms":3685}
+10-24 21:27:32.876 28486 28507 I ActumEval: {"id":"H016","path":"rules","answered":true,"actions":[{"intent":"EXPENSE","fields":{"amount":"780","counterparty_or_merchant":"Zomato for dinner","direction":"spent"}}],"ms":0}
+10-24 21:27:42.048  1554 12574 S walog   : dlopen undistort ver: 000
+10-24 21:27:42.344  1554  1974 S walog   : [WLIMPL] call dynamicLoad! 
+10-24 21:27:42.351  1554  1974 S walog   : [WLIMPL] dlopen ldc load api success! 
+10-24 21:27:42.351  1554  1974 S walog   : [WLIMPL] init ldc api handle success!
+10-24 21:27:42.402  1554  1974 S walog   : [WLIMPL] init ldc by model success!
+10-24 21:27:43.192  1554 29378 S walog   : [WLIMPL] release ldc api handle success! 
+10-24 21:27:43.624 28486 28510 I ActumEval: {"id":"H016","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EXPENSE","fields":{"amount":780,"counterparty_or_merchant":"Zomato","category":"food","direction":"spent"}}],"ms":6041}
+10-24 21:27:43.624 28486 28510 I ActumEval: {"id":"H016","path":"hybrid","answered":true,"actions":[{"intent":"EXPENSE","fields":{"amount":"780","counterparty_or_merchant":"Zomato for dinner","direction":"spent"}}],"ms":0}
+10-24 21:27:43.626 28486 28510 I ActumEval: {"id":"H017","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:27:53.788 28486 28507 I ActumEval: {"id":"H017","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EXPENSE","fields":{"amount":1500,"counterparty_or_merchant":"Karan","direction":"owed_to_me"}}],"ms":5466}
+10-24 21:27:53.788 28486 28507 I ActumEval: {"id":"H017","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EXPENSE","fields":{"amount":1500,"counterparty_or_merchant":"Karan","direction":"owed_to_me"}}],"ms":5466}
+10-24 21:27:53.790 28486 28507 I ActumEval: {"id":"H018","path":"rules","answered":true,"actions":[{"intent":"EXPENSE","fields":{"amount":"200","counterparty_or_merchant":"Meera","direction":"i_owe"}}],"ms":1}
+10-24 21:28:03.619 28486 28510 I ActumEval: {"id":"H018","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EXPENSE","fields":{"amount":200,"counterparty_or_merchant":"Meera","direction":"i_owe"}}],"ms":5054}
+10-24 21:28:03.619 28486 28510 I ActumEval: {"id":"H018","path":"hybrid","answered":true,"actions":[{"intent":"EXPENSE","fields":{"amount":"200","counterparty_or_merchant":"Meera","direction":"i_owe"}}],"ms":1}
+10-24 21:28:03.620 28486 28510 I ActumEval: {"id":"H019","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:28:14.257 28486 28508 I ActumEval: {"id":"H019","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EXPENSE","fields":{"amount":299,"counterparty_or_merchant":"phone cover","category":"personal","date_text":"","direction":"spent"}}],"ms":6028}
+10-24 21:28:14.257 28486 28508 I ActumEval: {"id":"H019","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EXPENSE","fields":{"amount":299,"counterparty_or_merchant":"phone cover","category":"personal","date_text":"","direction":"spent"}}],"ms":6028}
+10-24 21:28:14.258 28486 28508 I ActumEval: {"id":"H020","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:28:22.052 28486 28507 I ActumEval: {"id":"H020","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"booking transportation"}}],"ms":3242}
+10-24 21:28:22.052 28486 28507 I ActumEval: {"id":"H020","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"booking transportation"}}],"ms":3242}
+10-24 21:28:22.053 28486 28507 I ActumEval: {"id":"H021","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:28:32.201 28486 28508 I ActumEval: {"id":"H021","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["renew passport","call the bank","pay rent"],"name":"To Do"}}],"ms":5628}
+10-24 21:28:32.202 28486 28508 I ActumEval: {"id":"H021","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["renew passport","call the bank","pay rent"],"name":"To Do"}}],"ms":5628}
+10-24 21:28:32.206 28486 28508 I ActumEval: {"id":"H022","path":"rules","answered":true,"actions":[{"intent":"TODO","fields":{"items":["buy batteries","buy a bulb","buy dish soap"]}}],"ms":4}
+10-24 21:28:41.887 28486 28508 I ActumEval: {"id":"H022","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["buy batteries","buy a bulb","buy dish soap"]}}],"ms":4398}
+10-24 21:28:41.887 28486 28508 I ActumEval: {"id":"H022","path":"hybrid","answered":true,"actions":[{"intent":"TODO","fields":{"items":["buy batteries","buy a bulb","buy dish soap"]}}],"ms":4}
+10-24 21:28:41.888 28486 28508 I ActumEval: {"id":"H023","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:28:51.866 28486 28507 I ActumEval: {"id":"H023","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["water the plants"]}}],"ms":3830}
+10-24 21:28:51.866 28486 28507 I ActumEval: {"id":"H023","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["water the plants"]}}],"ms":3830}
+10-24 21:28:51.867 28486 28507 I ActumEval: {"id":"H024","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:29:07.070 28486 28508 I ActumEval: {"id":"H024","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":true,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"invalid JSON in the required shape"}}],"ms":9533}
+10-24 21:29:07.070 28486 28508 I ActumEval: {"id":"H024","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":true,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"invalid JSON in the required shape"}}],"ms":9533}
+10-24 21:29:07.072 28486 28508 I ActumEval: {"id":"H025","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:29:18.893 28486 28506 I ActumEval: {"id":"H025","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["onions","tomatoes","ginger","garlic"]}},{"intent":"UNSUPPORTED","fields":{"reason":"unknown action \"list_name\""}}],"ms":6475}
+10-24 21:29:18.893 28486 28506 I ActumEval: {"id":"H025","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["onions","tomatoes","ginger","garlic"]}},{"intent":"UNSUPPORTED","fields":{"reason":"unknown action \"list_name\""}}],"ms":6475}
+10-24 21:29:18.895 28486 28506 I ActumEval: {"id":"H026","path":"rules","answered":true,"actions":[{"intent":"CONTACT","fields":{"name":"Rohan","phone":"98765 00012"}}],"ms":1}
+10-24 21:29:30.017 28486 28507 I ActumEval: {"id":"H026","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"CONTACT","fields":{"name":"Rohan","phone":"98765 00012"}}],"ms":5501}
+10-24 21:29:30.017 28486 28507 I ActumEval: {"id":"H026","path":"hybrid","answered":true,"actions":[{"intent":"CONTACT","fields":{"name":"Rohan","phone":"98765 00012"}}],"ms":1}
+10-24 21:29:30.018 28486 28507 I ActumEval: {"id":"H027","path":"rules","answered":true,"actions":[{"intent":"CONTACT","fields":{"name":"plumber Suresh","phone":"9123400056"}}],"ms":1}
+10-24 21:29:40.864 28486 28508 I ActumEval: {"id":"H027","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"CONTACT","fields":{"name":"Suresh","phone":"9123400056","note":""}}],"ms":5390}
+10-24 21:29:40.864 28486 28508 I ActumEval: {"id":"H027","path":"hybrid","answered":true,"actions":[{"intent":"CONTACT","fields":{"name":"plumber Suresh","phone":"9123400056"}}],"ms":1}
+10-24 21:29:40.866 28486 28508 I ActumEval: {"id":"H028","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:29:52.435 28486 28507 I ActumEval: {"id":"H028","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"CONTACT","fields":{"name":"Dr Iyer","phone":"+91 90000 11122","note":"dentist"}}],"ms":6218}
+10-24 21:29:52.435 28486 28507 I ActumEval: {"id":"H028","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"CONTACT","fields":{"name":"Dr Iyer","phone":"+91 90000 11122","note":"dentist"}}],"ms":6218}
+10-24 21:29:52.436 28486 28507 I ActumEval: {"id":"H029","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:30:03.141 28486 28506 I ActumEval: {"id":"H029","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"CONTACT","fields":{"name":"Nisha","phone":"8800012345"}}],"ms":5376}
+10-24 21:30:03.141 28486 28506 I ActumEval: {"id":"H029","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"CONTACT","fields":{"name":"Nisha","phone":"8800012345"}}],"ms":5376}
+10-24 21:30:03.142 28486 28506 I ActumEval: {"id":"H030","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:30:12.930 28486 28507 I ActumEval: {"id":"H030","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"DIARY","fields":{"text":"dear diary today the rain finally stopped and I walked home slowly"}}],"ms":4318}
+10-24 21:30:12.930 28486 28507 I ActumEval: {"id":"H030","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"DIARY","fields":{"text":"dear diary today the rain finally stopped and I walked home slowly"}}],"ms":4318}
+10-24 21:30:12.930 28486 28507 I ActumEval: {"id":"H031","path":"rules","answered":true,"actions":[{"intent":"DIARY","fields":{"text":"felt proud after the presentation went well"}}],"ms":1}
+10-24 21:30:19.226  1554 27206 S walog   : dlopen undistort ver: 000
+10-24 21:30:19.466  1554  1981 S walog   : [WLIMPL] call dynamicLoad! 
+10-24 21:30:19.466  1554  1981 S walog   : [WLIMPL] dlopen ldc load api success! 
+10-24 21:30:19.466  1554  1981 S walog   : [WLIMPL] init ldc api handle success!
+10-24 21:30:19.481  1554  1981 S walog   : [WLIMPL] init ldc by model success!
+10-24 21:30:20.338  1554 30568 S walog   : [WLIMPL] release ldc api handle success! 
+10-24 21:30:22.581 28486 28506 I ActumEval: {"id":"H031","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"DIARY","fields":{"text":"felt proud after the presentation went well"}}],"ms":4169}
+10-24 21:30:22.581 28486 28506 I ActumEval: {"id":"H031","path":"hybrid","answered":true,"actions":[{"intent":"DIARY","fields":{"text":"felt proud after the presentation went well"}}],"ms":1}
+10-24 21:30:22.582 28486 28506 I ActumEval: {"id":"H032","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:30:31.675 28486 28507 I ActumEval: {"id":"H032","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"DIARY","fields":{"text":"I missed my old friends today"}}],"ms":3677}
+10-24 21:30:31.675 28486 28507 I ActumEval: {"id":"H032","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"DIARY","fields":{"text":"I missed my old friends today"}}],"ms":3677}
+10-24 21:30:31.676 28486 28507 I ActumEval: {"id":"H033","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:30:45.561 28486 28506 I ActumEval: {"id":"H033","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EXPLAIN","fields":{"summary":"The society water supply will be shut for tank cleaning.","key_dates":["Sunday","10 am to 4 pm"],"what_to_do":["Be prepared for no water during the specified hours."]}}],"ms":8572}
+10-24 21:30:45.561 28486 28506 I ActumEval: {"id":"H033","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EXPLAIN","fields":{"summary":"The society water supply will be shut for tank cleaning.","key_dates":["Sunday","10 am to 4 pm"],"what_to_do":["Be prepared for no water during the specified hours."]}}],"ms":8572}
+10-24 21:30:45.562 28486 28506 I ActumEval: {"id":"H034","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:30:54.390 28486 28507 I ActumEval: {"id":"H034","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["update KYC"]}}],"ms":3403}
+10-24 21:30:54.390 28486 28507 I ActumEval: {"id":"H034","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["update KYC"]}}],"ms":3403}
+10-24 21:30:54.391 28486 28507 I ActumEval: {"id":"H035","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:31:03.811 28486 28507 I ActumEval: {"id":"H035","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["return library books by 5 November"]}}],"ms":4067}
+10-24 21:31:03.811 28486 28507 I ActumEval: {"id":"H035","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["return library books by 5 November"]}}],"ms":4067}
+10-24 21:31:03.812 28486 28507 I ActumEval: {"id":"H036","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:31:13.155 28486 28510 I ActumEval: {"id":"H036","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"booking a cab to the airport"}}],"ms":4054}
+10-24 21:31:13.155 28486 28510 I ActumEval: {"id":"H036","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"booking a cab to the airport"}}],"ms":4054}
+10-24 21:31:13.156 28486 28510 I ActumEval: {"id":"H037","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:31:22.317 28486 28507 I ActumEval: {"id":"H037","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"sending whatsapp message"}}],"ms":3735}
+10-24 21:31:22.317 28486 28507 I ActumEval: {"id":"H037","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"sending whatsapp message"}}],"ms":3735}
+10-24 21:31:22.318 28486 28507 I ActumEval: {"id":"H038","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:31:31.361 28486 28507 I ActumEval: {"id":"H038","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"playing music"}}],"ms":3744}
+10-24 21:31:31.361 28486 28507 I ActumEval: {"id":"H038","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"playing music"}}],"ms":3744}
+10-24 21:31:31.362 28486 28507 I ActumEval: {"id":"H039","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:31:40.607 28486 28510 I ActumEval: {"id":"H039","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"ordering pizza from dominos"}}],"ms":3917}
+10-24 21:31:40.607 28486 28510 I ActumEval: {"id":"H039","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"ordering pizza from dominos"}}],"ms":3917}
+10-24 21:31:40.610 28486 28510 I ActumEval: {"id":"H040","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:31:49.838 28486 28507 I ActumEval: {"id":"H040","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"turn on the bedroom lights"}}],"ms":3893}
+10-24 21:31:49.838 28486 28507 I ActumEval: {"id":"H040","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"turn on the bedroom lights"}}],"ms":3893}
+10-24 21:31:49.839 28486 28507 I ActumEval: {"id":"H041","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:31:58.668 28486 28507 I ActumEval: {"id":"H041","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"weather query"}}],"ms":3469}
+10-24 21:31:58.668 28486 28507 I ActumEval: {"id":"H041","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"weather query"}}],"ms":3469}
+10-24 21:31:58.669 28486 28507 I ActumEval: {"id":"H042","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:32:07.368 28486 28506 I ActumEval: {"id":"H042","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"ALARM","fields":{}}],"ms":3132}
+10-24 21:32:07.368 28486 28506 I ActumEval: {"id":"H042","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"ALARM","fields":{}}],"ms":3132}
+10-24 21:32:07.369 28486 28506 I ActumEval: {"id":"H043","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:32:19.555 28486 28506 I ActumEval: {"id":"H043","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["buy milk"]}}],"ms":6625}
+10-24 21:32:19.555 28486 28506 I ActumEval: {"id":"H043","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["buy milk"]}}],"ms":6625}
+10-24 21:32:19.556 28486 28506 I ActumEval: {"id":"H044","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:32:29.652 28486 28506 I ActumEval: {"id":"H044","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"ALARM","fields":{"label":"kal ka alarm mat lagana","date_text":"kal"}}],"ms":4772}
+10-24 21:32:29.652 28486 28506 I ActumEval: {"id":"H044","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"ALARM","fields":{"label":"kal ka alarm mat lagana","date_text":"kal"}}],"ms":4772}
+10-24 21:32:29.653 28486 28506 I ActumEval: {"id":"H045","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:32:39.979 28486 28507 I ActumEval: {"id":"H045","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"cancel nothing, I didn't spend 500 yesterday"}}],"ms":4939}
+10-24 21:32:39.979 28486 28507 I ActumEval: {"id":"H045","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"cancel nothing, I didn't spend 500 yesterday"}}],"ms":4939}
+10-24 21:32:39.980 28486 28507 I ActumEval: {"id":"H046","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:32:50.420 28486 28506 I ActumEval: {"id":"H046","path":"gemma","answered":false,"invalid":"not about the message","repaired":false,"retried":false,"actions":[],"ms":5075}
+10-24 21:32:50.420 28486 28506 I ActumEval: {"id":"H046","path":"hybrid","answered":false,"invalid":"not about the message","repaired":false,"retried":false,"actions":[],"ms":5075}
+10-24 21:32:50.421 28486 28506 I ActumEval: {"id":"H047","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:33:00.603 28486 28507 I ActumEval: {"id":"H047","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"ALARM","fields":{"label":"alarm","time_text":"7","date_text":null}}],"ms":4850}
+10-24 21:33:00.603 28486 28507 I ActumEval: {"id":"H047","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"ALARM","fields":{"label":"alarm","time_text":"7","date_text":null}}],"ms":4850}
+10-24 21:33:00.604 28486 28507 I ActumEval: {"id":"H048","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:33:10.954 28486 28508 I ActumEval: {"id":"H048","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"lunch with Dev","date_text":"Saturday"}}],"ms":5023}
+10-24 21:33:10.954 28486 28508 I ActumEval: {"id":"H048","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"lunch with Dev","date_text":"Saturday"}}],"ms":5023}
+10-24 21:33:10.957 28486 28508 I ActumEval: {"id":"H049","path":"rules","answered":false,"actions":[],"ms":2}
+10-24 21:33:22.911 28486 28508 I ActumEval: {"id":"H049","path":"gemma","answered":false,"invalid":"not about the message","repaired":false,"retried":false,"actions":[],"ms":6539}
+10-24 21:33:22.911 28486 28508 I ActumEval: {"id":"H049","path":"hybrid","answered":false,"invalid":"not about the message","repaired":false,"retried":false,"actions":[],"ms":6539}
+10-24 21:33:22.912 28486 28508 I ActumEval: {"id":"H050","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:33:31.667 28486 28506 I ActumEval: {"id":"H050","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["call the electrician"]}}],"ms":3395}
+10-24 21:33:31.667 28486 28506 I ActumEval: {"id":"H050","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["call the electrician"]}}],"ms":3395}
+10-24 21:33:31.668 28486 28506 I ActumEval: {"id":"H051","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:33:46.336 28486 28506 I ActumEval: {"id":"H051","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":true,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"invalid JSON format"}}],"ms":9212}
+10-24 21:33:46.336 28486 28506 I ActumEval: {"id":"H051","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":true,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"invalid JSON format"}}],"ms":9212}
+10-24 21:33:46.337 28486 28506 I ActumEval: {"id":"H052","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:33:56.281 28486 28507 I ActumEval: {"id":"H052","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"dinner with parents","date_text":"this weekend"}}],"ms":4610}
+10-24 21:33:56.281 28486 28507 I ActumEval: {"id":"H052","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"dinner with parents","date_text":"this weekend"}}],"ms":4610}
+10-24 21:33:56.282 28486 28507 I ActumEval: {"id":"H053","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:34:06.717 28486 28506 I ActumEval: {"id":"H053","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"ALARM","fields":{"label":"stretch","time_text":"in a bit","date_text":null}}],"ms":5065}
+10-24 21:34:06.717 28486 28506 I ActumEval: {"id":"H053","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"ALARM","fields":{"label":"stretch","time_text":"in a bit","date_text":null}}],"ms":5065}
+10-24 21:34:06.719 28486 28506 I ActumEval: {"id":"H054","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:34:09.802  1554  1090 S walog   : dlopen undistort ver: 000
+10-24 21:34:09.914  1554  1978 S walog   : [WLIMPL] call dynamicLoad! 
+10-24 21:34:09.915  1554  1978 S walog   : [WLIMPL] dlopen ldc load api success! 
+10-24 21:34:09.915  1554  1978 S walog   : [WLIMPL] init ldc api handle success!
+10-24 21:34:09.944  1554  1978 S walog   : [WLIMPL] init ldc by model success!
+10-24 21:34:10.422  1554 31084 S walog   : [WLIMPL] release ldc api handle success! 
+10-24 21:34:15.705 28486 28508 I ActumEval: {"id":"H054","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["submit report"]}}],"ms":3553}
+10-24 21:34:15.706 28486 28508 I ActumEval: {"id":"H054","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["submit report"]}}],"ms":3553}
+10-24 21:34:15.708 28486 28508 I ActumEval: {"id":"H055","path":"rules","answered":false,"actions":[],"ms":2}
+10-24 21:34:25.140 28486 28507 I ActumEval: {"id":"H055","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"ALARM","fields":{"label":"call","time_text":"7"}}],"ms":3995}
+10-24 21:34:25.140 28486 28507 I ActumEval: {"id":"H055","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"ALARM","fields":{"label":"call","time_text":"7"}}],"ms":3995}
+10-24 21:34:25.141 28486 28507 I ActumEval: {"id":"H056","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:34:34.128 28486 28507 I ActumEval: {"id":"H056","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"ALARM","fields":{"time_text":"6 am"}}],"ms":3685}
+10-24 21:34:34.128 28486 28507 I ActumEval: {"id":"H056","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"ALARM","fields":{"time_text":"6 am"}}],"ms":3685}
+10-24 21:34:34.129 28486 28507 I ActumEval: {"id":"H057","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:34:45.292 28486 28506 I ActumEval: {"id":"H057","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EXPENSE","fields":{"amount":120,"counterparty_or_merchant":"chai and samosa","category":"food","direction":"spent"}}],"ms":5811}
+10-24 21:34:45.292 28486 28506 I ActumEval: {"id":"H057","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EXPENSE","fields":{"amount":120,"counterparty_or_merchant":"chai and samosa","category":"food","direction":"spent"}}],"ms":5811}
+10-24 21:34:45.294 28486 28506 I ActumEval: {"id":"H058","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:34:56.187 28486 28507 I ActumEval: {"id":"H058","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"dentist","date_text":"tomorrow","time_text":"4pm"}}],"ms":5650}
+10-24 21:34:56.187 28486 28507 I ActumEval: {"id":"H058","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"dentist","date_text":"tomorrow","time_text":"4pm"}}],"ms":5650}
+10-24 21:34:56.189 28486 28507 I ActumEval: {"id":"H059","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:35:07.389 28486 28506 I ActumEval: {"id":"H059","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["eggs","butter"]}},{"intent":"TODO","fields":{"list_name":"shopping"}}],"ms":6040}
+10-24 21:35:07.389 28486 28506 I ActumEval: {"id":"H059","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["eggs","butter"]}},{"intent":"TODO","fields":{"list_name":"shopping"}}],"ms":6040}
+10-24 21:35:07.390 28486 28506 I ActumEval: {"id":"H060","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:35:19.493 28486 28510 I ActumEval: {"id":"H060","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"meeting","date_text":"wednesdy","time_text":"11am"}},{"intent":"TODO","fields":{"items":["meet with Sara"]}}],"ms":6576}
+10-24 21:35:19.493 28486 28510 I ActumEval: {"id":"H060","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"meeting","date_text":"wednesdy","time_text":"11am"}},{"intent":"TODO","fields":{"items":["meet with Sara"]}}],"ms":6576}
+10-24 21:35:19.494 28486 28510 I ActumEval: {"id":"H061","path":"rules","answered":true,"actions":[{"intent":"ALARM","fields":{"time_text":"subah 6 baje","date_text":"kal"}}],"ms":0}
+10-24 21:35:29.204 28486 28506 I ActumEval: {"id":"H061","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"ALARM","fields":{"label":"alarm","time_text":"6 baje","date_text":"kal"}}],"ms":4694}
+10-24 21:35:29.205 28486 28506 I ActumEval: {"id":"H061","path":"hybrid","answered":true,"actions":[{"intent":"ALARM","fields":{"time_text":"subah 6 baje","date_text":"kal"}}],"ms":0}
+10-24 21:35:29.206 28486 28506 I ActumEval: {"id":"H062","path":"rules","answered":true,"actions":[{"intent":"EXPENSE","fields":{"amount":"400","counterparty_or_merchant":"Amit","direction":"spent"}}],"ms":1}
+10-24 21:35:39.183 28486 28507 I ActumEval: {"id":"H062","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EXPENSE","fields":{"amount":400,"counterparty_or_merchant":"Amit","direction":"spent"}}],"ms":4860}
+10-24 21:35:39.183 28486 28507 I ActumEval: {"id":"H062","path":"hybrid","answered":true,"actions":[{"intent":"EXPENSE","fields":{"amount":"400","counterparty_or_merchant":"Amit","direction":"spent"}}],"ms":1}
+10-24 21:35:39.185 28486 28507 I ActumEval: {"id":"H063","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:35:49.899 28486 28507 I ActumEval: {"id":"H063","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"ALARM","fields":{"time_text":"10 minute after now"}},{"intent":"UNSUPPORTED","fields":{"reason":"alarm setting"}}],"ms":5612}
+10-24 21:35:49.899 28486 28507 I ActumEval: {"id":"H063","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"ALARM","fields":{"time_text":"10 minute after now"}},{"intent":"UNSUPPORTED","fields":{"reason":"alarm setting"}}],"ms":5612}
+10-24 21:35:49.900 28486 28507 I ActumEval: {"id":"H064","path":"rules","answered":true,"actions":[{"intent":"TODO","fields":{"items":["doodh","atta"],"list_name":"shopping"}}],"ms":1}
+10-24 21:35:59.133 28486 28507 I ActumEval: {"id":"H064","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["doodh aur atta lana hai"]}}],"ms":3988}
+10-24 21:35:59.133 28486 28507 I ActumEval: {"id":"H064","path":"hybrid","answered":true,"actions":[{"intent":"TODO","fields":{"items":["doodh","atta"],"list_name":"shopping"}}],"ms":1}
+10-24 21:35:59.135 28486 28507 I ActumEval: {"id":"H065","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:36:10.563 28486 28506 I ActumEval: {"id":"H065","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"doctor ke paas jana","time_text":"5 baje"}},{"intent":"TODO","fields":{"items":["doctor ke paas jana"]}}],"ms":6371}
+10-24 21:36:10.563 28486 28506 I ActumEval: {"id":"H065","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"doctor ke paas jana","time_text":"5 baje"}},{"intent":"TODO","fields":{"items":["doctor ke paas jana"]}}],"ms":6371}
+10-24 21:36:10.564 28486 28506 I ActumEval: {"id":"H066","path":"rules","answered":true,"actions":[{"intent":"ALARM","fields":{"time_text":"sokal 7 tay","date_text":"kal"}}],"ms":1}
+10-24 21:36:20.275 28486 28510 I ActumEval: {"id":"H066","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"ALARM","fields":{"label":"alarm","time_text":"7","date_text":"kal"}}],"ms":4602}
+10-24 21:36:20.276 28486 28510 I ActumEval: {"id":"H066","path":"hybrid","answered":true,"actions":[{"intent":"ALARM","fields":{"time_text":"sokal 7 tay","date_text":"kal"}}],"ms":1}
+10-24 21:36:20.277 28486 28510 I ActumEval: {"id":"H067","path":"rules","answered":true,"actions":[{"intent":"EXPENSE","fields":{"amount":"250","counterparty_or_merchant":"Riya","direction":"spent"}}],"ms":1}
+10-24 21:36:29.398 28486 28506 I ActumEval: {"id":"H067","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"Riya ke 250 dilam"}}],"ms":4159}
+10-24 21:36:29.398 28486 28506 I ActumEval: {"id":"H067","path":"hybrid","answered":true,"actions":[{"intent":"EXPENSE","fields":{"amount":"250","counterparty_or_merchant":"Riya","direction":"spent"}}],"ms":1}
+10-24 21:36:29.399 28486 28506 I ActumEval: {"id":"H068","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:36:41.718 28486 28506 I ActumEval: {"id":"H068","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"ALARM","fields":{"label":"5 minute pore alarm"}},{"intent":"ALARM","fields":{"time_text":"5 minute pore alarm"}},{"intent":"ALARM","fields":{"date_text":""}}],"ms":7259}
+10-24 21:36:41.718 28486 28506 I ActumEval: {"id":"H068","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"ALARM","fields":{"label":"5 minute pore alarm"}},{"intent":"ALARM","fields":{"time_text":"5 minute pore alarm"}},{"intent":"ALARM","fields":{"date_text":""}}],"ms":7259}
+10-24 21:36:41.719 28486 28506 I ActumEval: {"id":"H069","path":"rules","answered":true,"actions":[{"intent":"TODO","fields":{"items":["dim","pauruti"],"list_name":"shopping"}}],"ms":0}
+10-24 21:36:50.870 28486 28510 I ActumEval: {"id":"H069","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"dim ar pauruti kinte hobe"}}],"ms":4033}
+10-24 21:36:50.871 28486 28510 I ActumEval: {"id":"H069","path":"hybrid","answered":true,"actions":[{"intent":"TODO","fields":{"items":["dim","pauruti"],"list_name":"shopping"}}],"ms":0}
+10-24 21:36:50.872 28486 28510 I ActumEval: {"id":"H070","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:37:01.103  1554 12574 S walog   : dlopen undistort ver: 000
+10-24 21:37:01.344  1554  1977 S walog   : [WLIMPL] call dynamicLoad! 
+10-24 21:37:01.348  1554  1977 S walog   : [WLIMPL] dlopen ldc load api success! 
+10-24 21:37:01.350  1554  1977 S walog   : [WLIMPL] init ldc api handle success!
+10-24 21:37:01.387  1554  1977 S walog   : [WLIMPL] init ldc by model success!
+10-24 21:37:01.757  1554 31451 S walog   : [WLIMPL] release ldc api handle success! 
+10-24 21:37:02.461 28486 28506 I ActumEval: {"id":"H070","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"meeting","date_text":"Friday"}},{"intent":"TODO","fields":{"items":["porshu bikel 4 te meeting ache"]}}],"ms":6568}
+10-24 21:37:02.462 28486 28506 I ActumEval: {"id":"H070","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"meeting","date_text":"Friday"}},{"intent":"TODO","fields":{"items":["porshu bikel 4 te meeting ache"]}}],"ms":6568}
+10-24 21:37:02.463 28486 28506 I ActumEval: {"id":"H071","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:37:13.798 28486 28506 I ActumEval: {"id":"H071","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"CONTACT","fields":{"name":"friend","phone":"9876511122","note":"call after 8 pm"}}],"ms":6279}
+10-24 21:37:13.798 28486 28506 I ActumEval: {"id":"H071","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"CONTACT","fields":{"name":"friend","phone":"9876511122","note":"call after 8 pm"}}],"ms":6279}
+10-24 21:37:13.800 28486 28506 I ActumEval: {"id":"H072","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:37:23.294 28486 28510 I ActumEval: {"id":"H072","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["buy something with 2000 off till Sunday"]}}],"ms":4327}
+10-24 21:37:23.294 28486 28510 I ActumEval: {"id":"H072","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["buy something with 2000 off till Sunday"]}}],"ms":4327}
+10-24 21:37:23.296 28486 28510 I ActumEval: {"id":"H073","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:37:32.353 28486 28506 I ActumEval: {"id":"H073","path":"gemma","answered":false,"invalid":"not about the message","repaired":false,"retried":false,"actions":[],"ms":4016}
+10-24 21:37:32.353 28486 28506 I ActumEval: {"id":"H073","path":"hybrid","answered":false,"invalid":"not about the message","repaired":false,"retried":false,"actions":[],"ms":4016}
+10-24 21:37:32.354 28486 28506 I ActumEval: {"id":"H074","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:37:42.574 28486 28510 I ActumEval: {"id":"H074","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"ALARM","fields":{"label":"wake me up","time_text":"4 am"}}],"ms":4379}
+10-24 21:37:42.574 28486 28510 I ActumEval: {"id":"H074","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"ALARM","fields":{"label":"wake me up","time_text":"4 am"}}],"ms":4379}
+10-24 21:37:42.575 28486 28510 I ActumEval: {"id":"H075","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:37:54.408 28486 28506 I ActumEval: {"id":"H075","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"dentist","date_text":"Friday","time_text":"5 pm"}},{"intent":"TODO","fields":{"items":["add floss to shopping list"]}}],"ms":6589}
+10-24 21:37:54.408 28486 28506 I ActumEval: {"id":"H075","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"dentist","date_text":"Friday","time_text":"5 pm"}},{"intent":"TODO","fields":{"items":["add floss to shopping list"]}}],"ms":6589}
+10-24 21:37:54.409 28486 28506 I ActumEval: {"id":"H076","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:38:07.686 28486 28510 I ActumEval: {"id":"H076","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EXPENSE","fields":{"amount":90,"counterparty_or_merchant":"coffee","category":"food","direction":"spent"}},{"intent":"ALARM","fields":{"label":"wake me","time_text":"6","date_text":"tomorrow"}}],"ms":8115}
+10-24 21:38:07.686 28486 28510 I ActumEval: {"id":"H076","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EXPENSE","fields":{"amount":90,"counterparty_or_merchant":"coffee","category":"food","direction":"spent"}},{"intent":"ALARM","fields":{"label":"wake me","time_text":"6","date_text":"tomorrow"}}],"ms":8115}
+10-24 21:38:07.687 28486 28510 I ActumEval: {"id":"H077","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:38:22.055 28486 28507 I ActumEval: {"id":"H077","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"CONTACT","fields":{"name":"Kabir","phone":"9811100022","note":"I owe him 300"}},{"intent":"EXPENSE","fields":{"amount":300,"counterparty_or_merchant":"Kabir","direction":"i_owe"}}],"ms":9311}
+10-24 21:38:22.055 28486 28507 I ActumEval: {"id":"H077","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"CONTACT","fields":{"name":"Kabir","phone":"9811100022","note":"I owe him 300"}},{"intent":"EXPENSE","fields":{"amount":300,"counterparty_or_merchant":"Kabir","direction":"i_owe"}}],"ms":9311}
+10-24 21:38:22.056 28486 28507 I ActumEval: {"id":"H078","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:38:36.935 28486 28510 I ActumEval: {"id":"H078","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"meeting","date_text":"kal","time_text":"11 baje"}},{"intent":"EXPENSE","fields":{"amount":150,"counterparty_or_merchant":"Ravi","direction":"spent"}},{"intent":"TODO","fields":{"items":["sabzi lani hai"]}}],"ms":9871}
+10-24 21:38:36.935 28486 28510 I ActumEval: {"id":"H078","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"meeting","date_text":"kal","time_text":"11 baje"}},{"intent":"EXPENSE","fields":{"amount":150,"counterparty_or_merchant":"Ravi","direction":"spent"}},{"intent":"TODO","fields":{"items":["sabzi lani hai"]}}],"ms":9871}
+10-24 21:38:36.936 28486 28510 I ActumEval: {"id":"H079","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:38:49.693 28486 28506 I ActumEval: {"id":"H079","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"class","date_text":"kal","time_text":"9tay"}},{"intent":"EXPENSE","fields":{"amount":80,"counterparty_or_merchant":"Tanya","direction":"spent"}}],"ms":7729}
+10-24 21:38:49.693 28486 28506 I ActumEval: {"id":"H079","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"class","date_text":"kal","time_text":"9tay"}},{"intent":"EXPENSE","fields":{"amount":80,"counterparty_or_merchant":"Tanya","direction":"spent"}}],"ms":7729}
+10-24 21:38:49.694 28486 28506 I ActumEval: {"id":"H080","path":"rules","answered":true,"actions":[{"intent":"DIARY","fields":{"text":"long day at work. also set an alarm for 6"}}],"ms":1}
+10-24 21:38:52.726  1554 27206 S walog   : dlopen undistort ver: 000
+10-24 21:38:52.840  1554  1975 S walog   : [WLIMPL] call dynamicLoad! 
+10-24 21:38:52.841  1554  1975 S walog   : [WLIMPL] dlopen ldc load api success! 
+10-24 21:38:52.841  1554  1975 S walog   : [WLIMPL] init ldc api handle success!
+10-24 21:38:52.865  1554  1975 S walog   : [WLIMPL] init ldc by model success!
+10-24 21:38:53.647  1554 31903 S walog   : [WLIMPL] release ldc api handle success! 
+10-24 21:39:00.245 28486 28506 I ActumEval: {"id":"H080","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"DIARY","fields":{"text":"long day at work."}},{"intent":"ALARM","fields":{"label":"alarm","time_text":"6"}}],"ms":5252}
+10-24 21:39:00.245 28486 28506 I ActumEval: {"id":"H080","path":"hybrid","answered":true,"actions":[{"intent":"DIARY","fields":{"text":"long day at work. also set an alarm for 6"}}],"ms":1}
+10-24 21:39:00.246 28486 28506 I ActumEval: {"id":"H081","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:39:08.867 28486 28506 I ActumEval: {"id":"H081","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["add contact for Priya"]}}],"ms":3500}
+10-24 21:39:08.867 28486 28506 I ActumEval: {"id":"H081","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["add contact for Priya"]}}],"ms":3500}
+10-24 21:39:08.868 28486 28506 I ActumEval: {"id":"H082","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:39:16.667 28486 28506 I ActumEval: {"id":"H082","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"ALARM","fields":{}}],"ms":2807}
+10-24 21:39:16.667 28486 28506 I ActumEval: {"id":"H082","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"ALARM","fields":{}}],"ms":2807}
+10-24 21:39:16.669 28486 28506 I ActumEval: {"id":"H083","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:39:27.837 28486 28507 I ActumEval: {"id":"H083","path":"gemma","answered":false,"invalid":"not about the message","repaired":false,"retried":false,"actions":[],"ms":6059}
+10-24 21:39:27.837 28486 28507 I ActumEval: {"id":"H083","path":"hybrid","answered":false,"invalid":"not about the message","repaired":false,"retried":false,"actions":[],"ms":6059}
+10-24 21:39:27.838 28486 28507 I ActumEval: {"id":"H084","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:39:37.293 28486 28510 I ActumEval: {"id":"H084","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["put the anniversary party in my calendar"]}}],"ms":4289}
+10-24 21:39:37.293 28486 28510 I ActumEval: {"id":"H084","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["put the anniversary party in my calendar"]}}],"ms":4289}
+10-24 21:39:37.294 28486 28510 I ActumEval: {"id":"H085","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:39:56.960 28486 28507 I ActumEval: {"id":"H085","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"Dr. Mehta Appointment","date_text":"22/11","time_text":"10:30 AM"}},{"intent":"EVENT","fields":{"title":"SUNRISE CLINIC","date_text":"22/11","time_text":"10:30 AM"}},{"intent":"EVENT","fields":{"title":"Token","date_text":"22/11","time_text":"10:30 AM","notes":"Token 14"}}],"ms":14675}
+10-24 21:39:56.961 28486 28507 I ActumEval: {"id":"H085","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"Dr. Mehta Appointment","date_text":"22/11","time_text":"10:30 AM"}},{"intent":"EVENT","fields":{"title":"SUNRISE CLINIC","date_text":"22/11","time_text":"10:30 AM"}},{"intent":"EVENT","fields":{"title":"Token","date_text":"22/11","time_text":"10:30 AM","notes":"Token 14"}}],"ms":14675}
+10-24 21:39:56.962 28486 28507 I ActumEval: {"id":"H086","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:40:09.857 28486 28510 I ActumEval: {"id":"H086","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["visit again"]}}],"ms":7874}
+10-24 21:40:09.857 28486 28510 I ActumEval: {"id":"H086","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["visit again"]}}],"ms":7874}
+10-24 21:40:09.858 28486 28510 I ActumEval: {"id":"H087","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:40:20.742 28486 28507 I ActumEval: {"id":"H087","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"Parent Teacher Meet","date_text":"Saturday","time_text":"9 AM - 12 PM","location":"School Auditorium"}}],"ms":5983}
+10-24 21:40:20.742 28486 28507 I ActumEval: {"id":"H087","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"Parent Teacher Meet","date_text":"Saturday","time_text":"9 AM - 12 PM","location":"School Auditorium"}}],"ms":5983}
+10-24 21:40:20.743 28486 28507 I ActumEval: {"id":"H088","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:40:33.766 28486 28510 I ActumEval: {"id":"H088","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EXPENSE","fields":{"amount":2315,"counterparty_or_merchant":"ELECTRICITY BILL","category":"bills","date_text":"05-12"}},{"intent":"TODO","fields":{"items":["Pay electricity bill"]}}],"ms":7926}
+10-24 21:40:33.766 28486 28510 I ActumEval: {"id":"H088","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EXPENSE","fields":{"amount":2315,"counterparty_or_merchant":"ELECTRICITY BILL","category":"bills","date_text":"05-12"}},{"intent":"TODO","fields":{"items":["Pay electricity bill"]}}],"ms":7926}
+10-24 21:40:33.767 28486 28510 I ActumEval: {"id":"H089","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:40:47.521 28486 28507 I ActumEval: {"id":"H089","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"Yoga Workshop","date_text":"every Sunday","time_text":"7 AM"}},{"intent":"CONTACT","fields":{"name":"Neha","phone":"9000022211"}}],"ms":7733}
+10-24 21:40:47.521 28486 28507 I ActumEval: {"id":"H089","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"Yoga Workshop","date_text":"every Sunday","time_text":"7 AM"}},{"intent":"CONTACT","fields":{"name":"Neha","phone":"9000022211"}}],"ms":7733}
+10-24 21:40:47.522 28486 28507 I ActumEval: {"id":"H090","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:40:57.711 28486 28507 I ActumEval: {"id":"H090","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EXPENSE","fields":{"amount":60,"counterparty_or_merchant":"bus","category":"transport","direction":"spent"}}],"ms":5021}
+10-24 21:40:57.711 28486 28507 I ActumEval: {"id":"H090","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EXPENSE","fields":{"amount":60,"counterparty_or_merchant":"bus","category":"transport","direction":"spent"}}],"ms":5021}
+10-24 21:40:57.712 28486 28507 I ActumEval: {"id":"H091","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:41:09.433 28486 28506 I ActumEval: {"id":"H091","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"plumber visit","date_text":"Tuesday","time_text":"10"}},{"intent":"TODO","fields":{"items":["think about the trip"]}}],"ms":6433}
+10-24 21:41:09.433 28486 28506 I ActumEval: {"id":"H091","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"plumber visit","date_text":"Tuesday","time_text":"10"}},{"intent":"TODO","fields":{"items":["think about the trip"]}}],"ms":6433}
+10-24 21:41:09.434 28486 28506 I ActumEval: {"id":"H092","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:41:17.674 28486 28507 I ActumEval: {"id":"H092","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["buy cheese"]}}],"ms":3055}
+10-24 21:41:17.675 28486 28507 I ActumEval: {"id":"H092","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["buy cheese"]}}],"ms":3055}
+10-24 21:41:17.676 28486 28507 I ActumEval: {"id":"H093","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:41:27.005  1554  1090 S walog   : dlopen undistort ver: 000
+10-24 21:41:27.146  1554  1980 S walog   : [WLIMPL] call dynamicLoad! 
+10-24 21:41:27.154  1554  1980 S walog   : [WLIMPL] dlopen ldc load api success! 
+10-24 21:41:27.154  1554  1980 S walog   : [WLIMPL] init ldc api handle success!
+10-24 21:41:27.179  1554  1980 S walog   : [WLIMPL] init ldc by model success!
+10-24 21:41:27.307 28486 28507 I ActumEval: {"id":"H093","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"DIARY","fields":{"text":"the meeting dragged on forever and nobody decided anything, it was so boring"}}],"ms":4562}
+10-24 21:41:27.307 28486 28507 I ActumEval: {"id":"H093","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"DIARY","fields":{"text":"the meeting dragged on forever and nobody decided anything, it was so boring"}}],"ms":4562}
+10-24 21:41:27.308 28486 28507 I ActumEval: {"id":"H094","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:41:27.716  1554 32407 S walog   : [WLIMPL] release ldc api handle success! 
+10-24 21:41:37.827 28486 28506 I ActumEval: {"id":"H094","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"CONTACT","fields":{"name":"Admin","phone":"9999999999","note":"Gym closed on Monday."}}],"ms":5381}
+10-24 21:41:37.827 28486 28506 I ActumEval: {"id":"H094","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"CONTACT","fields":{"name":"Admin","phone":"9999999999","note":"Gym closed on Monday."}}],"ms":5381}
+10-24 21:41:37.828 28486 28506 I ActumEval: {"id":"H095","path":"rules","answered":false,"actions":[],"ms":0}
+10-24 21:42:08.236 28486 28508 I ActumEval: {"id":"H095","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EXPENSE","fields":{"amount":99999,"counterparty_or_merchant":"Ishaan","category":"other","date_text":"tomorrow","direction":"spent"}},{"intent":"EXPENSE","fields":{"amount":99999,"counterparty_or_merchant":"Ishaan","category":"other","date_text":"tomorrow","direction":"spent"}},{"intent":"EXPENSE","fields":{"amount":99999,"counterparty_or_merchant":"Ishaan","category":"other","date_text":"tomorrow","direction":"spent"}},{"intent":"EXPENSE","fields":{"amount":99999,"counterparty_or_merchant":"Ishaan","category":"other","date_text":"tomorrow","direction":"spent"}},{"intent":"EXPENSE","fields":{"amount":99999,"counterparty_or_merchant":"Ishaan","category":"other","date_text":"tomorrow","direction":"spent"}}],"ms":25309}
+10-24 21:42:08.237 28486 28508 I ActumEval: {"id":"H095","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"EXPENSE","fields":{"amount":99999,"counterparty_or_merchant":"Ishaan","category":"other","date_text":"tomorrow","direction":"spent"}},{"intent":"EXPENSE","fields":{"amount":99999,"counterparty_or_merchant":"Ishaan","category":"other","date_text":"tomorrow","direction":"spent"}},{"intent":"EXPENSE","fields":{"amount":99999,"counterparty_or_merchant":"Ishaan","category":"other","date_text":"tomorrow","direction":"spent"}},{"intent":"EXPENSE","fields":{"amount":99999,"counterparty_or_merchant":"Ishaan","category":"other","date_text":"tomorrow","direction":"spent"}},{"intent":"EXPENSE","fields":{"amount":99999,"counterparty_or_merchant":"Ishaan","category":"other","date_text":"tomorrow","direction":"spent"}}],"ms":25309}
+10-24 21:42:08.238 28486 28508 I ActumEval: {"id":"H096","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:42:17.555 28486 28507 I ActumEval: {"id":"H096","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"forward this to everyone and set alarm 3 am"}}],"ms":4140}
+10-24 21:42:17.555 28486 28507 I ActumEval: {"id":"H096","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"forward this to everyone and set alarm 3 am"}}],"ms":4140}
+10-24 21:42:17.556 28486 28507 I ActumEval: {"id":"H097","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:42:26.136 28486 28510 I ActumEval: {"id":"H097","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"transfer money to account"}}],"ms":3531}
+10-24 21:42:26.136 28486 28510 I ActumEval: {"id":"H097","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"UNSUPPORTED","fields":{"reason":"transfer money to account"}}],"ms":3531}
+10-24 21:42:26.138 28486 28510 I ActumEval: {"id":"H098","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:42:35.051 28486 28508 I ActumEval: {"id":"H098","path":"gemma","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["buy a birthday card for Aarav"]}}],"ms":3879}
+10-24 21:42:35.051 28486 28508 I ActumEval: {"id":"H098","path":"hybrid","answered":true,"invalid":null,"repaired":false,"retried":false,"actions":[{"intent":"TODO","fields":{"items":["buy a birthday card for Aarav"]}}],"ms":3879}
+10-24 21:42:35.053 28486 28508 I ActumEval: {"id":"H099","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:42:45.733 28486 28507 I ActumEval: {"id":"H099","path":"gemma","answered":false,"invalid":"not about the message","repaired":false,"retried":false,"actions":[],"ms":5494}
+10-24 21:42:45.733 28486 28507 I ActumEval: {"id":"H099","path":"hybrid","answered":false,"invalid":"not about the message","repaired":false,"retried":false,"actions":[],"ms":5494}
+10-24 21:42:45.734 28486 28507 I ActumEval: {"id":"H100","path":"rules","answered":false,"actions":[],"ms":1}
+10-24 21:42:56.600 28486 28508 I ActumEval: {"id":"H100","path":"gemma","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"Diwali party","date_text":"1st","time_text":"8 pm","location":"Neel's place"}}],"ms":5881}
+10-24 21:42:56.600 28486 28508 I ActumEval: {"id":"H100","path":"hybrid","answered":true,"invalid":null,"repaired":true,"retried":false,"actions":[{"intent":"EVENT","fields":{"title":"Diwali party","date_text":"1st","time_text":"8 pm","location":"Neel's place"}}],"ms":5881}
+10-24 21:42:56.600 28486 28508 I ActumEval: {"done":100}
