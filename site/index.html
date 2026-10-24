@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Actum</title>
+<meta name="description" content="Actum: an offline Android app that keeps what you share and turns requests into actions, with Gemma running on the phone.">
+<style>
+  :root { --bg:#f3ede1; --ink:#1d1a16; --muted:#6b6257; --line:#d9cfbe; --amber:#c98a1b; --card:#fbf7ef; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#14130f; --ink:#ece6da; --muted:#a39a8c; --line:#2e2b25; --amber:#e0a43a; --card:#1c1a15; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.6 Georgia, "Iowan Old Style", serif; }
+  main { max-width:760px; margin:0 auto; padding:48px 16px 80px; }
+  h1 { font-size:2.6rem; margin:0 0 4px; letter-spacing:-.01em; }
+  h1 span { color:var(--amber); }
+  h2 { font:600 .8rem/1 system-ui, sans-serif; text-transform:uppercase; letter-spacing:.12em; color:var(--muted); margin:56px 0 12px; }
+  p.lede { font-size:1.3rem; margin:8px 0 20px; }
+  .note { font:14px/1.5 system-ui, sans-serif; color:var(--muted); border-left:3px solid var(--amber); padding:8px 12px; background:var(--card); }
+  ol.flow { counter-reset:s; list-style:none; padding:0; }
+  ol.flow li { counter-increment:s; padding:10px 0 10px 44px; position:relative; border-bottom:1px solid var(--line); }
+  ol.flow li::before { content:counter(s); position:absolute; left:0; top:10px; width:28px; height:28px; border-radius:50%; background:var(--amber); color:#fff; font:600 14px/28px system-ui, sans-serif; text-align:center; }
+  ul.acts { display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:8px; padding:0; list-style:none; font:15px/1.4 system-ui, sans-serif; }
+  ul.acts li { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:10px 12px; }
+  ul.acts b { display:block; font-size:12px; letter-spacing:.08em; color:var(--amber); }
+  table { width:100%; border-collapse:collapse; font:14px/1.4 system-ui, sans-serif; display:block; overflow-x:auto; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); white-space:nowrap; }
+  th { color:var(--muted); font-weight:600; }
+  a { color:var(--ink); text-decoration-color:var(--amber); text-underline-offset:3px; }
+  a.btn { display:inline-block; min-height:48px; padding:12px 20px; border-radius:24px; background:var(--ink); color:var(--bg); text-decoration:none; font:600 15px/24px system-ui, sans-serif; margin:4px 8px 4px 0; }
+  code { font:14px ui-monospace, Consolas, monospace; background:var(--card); padding:2px 5px; border-radius:4px; }
+  footer { margin-top:64px; font:13px/1.5 system-ui, sans-serif; color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Actum<span>.</span></h1>
+  <p class="lede">Share it. Find it. Do something with it. All on your phone.</p>
+  <p>Actum is an offline Android app. Whatever you share into it (text, screenshots, pictures, PDFs) is kept, read by on-device OCR, and searchable by meaning and by words. A request you type, say, or that sits inside a saved item becomes a ready action card. Nothing happens until you tap to confirm.</p>
+  <a class="btn" href="https://github.com/AM2004legend/ActIum">Code on GitHub</a>
+  <a class="btn" href="#demo">Watch the demo</a>
+  <p class="note">This website is documentation only. The Android app has no <code>INTERNET</code> permission and does not talk to any server, this site included.</p>
+
+  <h2 id="demo">Demo</h2>
+  <!-- DEMO: replace this paragraph with the video link once it is recorded -->
+  <p>A screen recording on a real phone, in airplane mode, is linked from the DEV write-up.</p>
+
+  <h2>How it works</h2>
+  <ol class="flow">
+    <li>Words arrive: typed, spoken through Android's on-device recognizer, or taken from a saved item's OCR text.</li>
+    <li>Plain, direct commands are read by deterministic rules. A rule is right or silent, never a guess.</li>
+    <li>Everything else is read by <strong>Gemma 4 E2B</strong>, running on the phone's CPU through LiteRT-LM. It returns strict JSON, streamed card by card.</li>
+    <li>Kotlin checks every field against your words and resolves dates, times, amounts and phone numbers. A reply not grounded in what you said is dropped.</li>
+    <li>You see one card per action, edit any field, and confirm. Only then does it run.</li>
+  </ol>
+
+  <h2>What it can do</h2>
+  <ul class="acts">
+    <li><b>EVENT</b>Prefilled calendar entry</li>
+    <li><b>ALARM</b>Clock app alarm</li>
+    <li><b>EXPENSE</b>Row in Actum's ledger</li>
+    <li><b>CONTACT</b>Prefilled new contact</li>
+    <li><b>TODO</b>Items on a list</li>
+    <li><b>DIARY</b>Sealed, encrypted entry</li>
+    <li><b>EXPLAIN</b>Restates a document</li>
+    <li><b>UNSUPPORTED</b>Says it can't, does nothing</li>
+  </ul>
+  <p>English first. Direct commands also work in everyday slang ("tmrw", "2 mins later") and in Hinglish and Benglish written in Roman letters.</p>
+
+  <h2>Evidence</h2>
+  <p>A frozen, synthetic held-out set of 100 sentences across 21 kinds (negations, injections, OCR receipts, Hinglish, Benglish, typos...), never used for tuning. <a href="https://github.com/AM2004legend/ActIum/tree/main/benchmarks">Method and raw results</a>.</p>
+  <table>
+    <tr><th>Path</th><th>Correct</th><th>Answered</th><th>Right when answered</th><th>Median</th></tr>
+    <tr><td>Rules alone</td><td>34 / 100</td><td>21</td><td>21 / 21</td><td>&lt; 1 ms</td></tr>
+    <tr><td>Gemma 4 E2B alone</td><td>69 / 100</td><td>95</td><td>67 / 95</td><td>4.9 s</td></tr>
+    <tr><td>Hybrid (as shipped)</td><td>72 / 100</td><td>95</td><td>70 / 95</td><td>4.4 s</td></tr>
+  </table>
+  <p>It also found real faults: prompt-injection text and negations ("don't set an alarm") can still produce cards. They never run without your tap, and they are listed openly in the results.</p>
+  <p class="note">"Correct" counts silence as right only where no action should happen. Gemma rows: Nothing A001T, Dimensity 7300, 8 GB, CPU. Earlier figures on a 30-sentence development set (used while fixing faults, so not held out) are in the repository.</p>
+
+  <h2>Privacy</h2>
+  <p>No network permission, no analytics, no crash uploader, no ads. Models are copied onto the phone by you, never downloaded by the app. Voice uses only Android's on-device recognizer; the words are kept, never the audio. The diary is encrypted on the phone; other local records are not.</p>
+
+  <h2>Limits</h2>
+  <p>Gemma is evaluated in English; Hinglish and Benglish have only a small test slice. OCR of Bengali and Devanagari script is limited. Speed depends on the phone. You need to sideload a 2.6 GB model.</p>
+
+  <h2>Get started</h2>
+  <p>Build with Android Studio, install, then copy <code>gemma-4-E2B-it.litertlm</code> into <code>Android/data/com.actum.app/files/</code>. Full steps in the <a href="https://github.com/AM2004legend/ActIum#readme">README</a>.</p>
+
+  <footer>
+    Gemma 4 E2B and EmbeddingGemma by Google, run through LiteRT-LM by Google AI Edge. Actum was started before Hacktoberfest 2026; the repository history says what is new.
+  </footer>
+</main>
+</body>
+</html>

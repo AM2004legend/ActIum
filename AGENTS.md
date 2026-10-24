@@ -422,3 +422,62 @@ This is where most of the risk is.
 - Commit only when your human asks.
 - When scope or behaviour changes, update `README.md`, `CLAUDE.md` and this file
   together, and never describe something that is not built and checked.
+- Never add an AI co-author or attribution line to commits or PRs.
+
+## Hacktoberfest 2026 DEV challenge (handoff notes, 2026-10-24)
+
+Read this before doing any competition work. Rules checked on
+https://dev.to/challenges/hacktoberfest-week3-2026-10-19:
+
+- Week 3 closes **2026-10-25 23:59 PDT**. Week 4 opens **2026-10-26**.
+- "All submissions and their respective repositories must be started and completed within
+  the challenge window." Reusing open-source/prior work is allowed only if it is
+  **credited** and the new changes are **significant**. Plagiarism = disqualification.
+- One submission can win **once** (overall or one category), so do not chase every
+  category. Judging: writing quality first, then theme fit, creativity, execution.
+- **Do not** make a new repo with cherry-picked or back-dated commits from Actum. That
+  misstates when the work was done and breaks the rules above. Owner was told this.
+
+Honest path (pending the owner's choice):
+1. New repo, started inside a challenge window, with truthful history. It may reuse Actum
+   code as a credited base (README + post say so plainly), and the new work must be
+   significant on its own.
+2. Categories that fit Actum without breaking `CLAUDE.md`: **Gemma** (core, real) and
+   **Entire/DevRelay** (share real agent sessions of the new work). A **.tech** landing
+   page is possible (static, no trackers). **Sentry** needs network: only in a separate,
+   opt-in diagnostic build, never the main app (rule 1). Skip it if time is short.
+3. `ACTUM_IMPLEMENTATION_PLAN.md` (from GPT) is sound as an engineering plan: P0 held-out
+   eval (rules vs Gemma vs hybrid) is the best "significant new work" candidate.
+
+Owner decided (2026-10-24): enter **Week 3**; organisers told the owner old projects are
+fine if the GitHub repo is new. Plan: new repo whose first commit honestly imports Actum
+as prior work, then real commits for the new work. Ask the owner before every commit.
+
+### Held-out benchmark (built 2026-10-24)
+
+- Cases: `android/app/src/main/assets/heldout.jsonl`, 100 synthetic cases, 21 classes,
+  frozen. Do not edit expectations or tune rules/prompt against it; if a label is wrong,
+  record the correction and rerun all paths.
+- Rules alone (PC): `cd android; ./gradlew :app:testDebugUnitTest --tests
+  "com.actum.ui.gate.HeldOutRulesTest"` → `build/heldout/rules.jsonl`.
+- Phone (rules, Gemma alone, hybrid): `adb logcat -c; adb shell am force-stop
+  com.actum.app; adb shell "am start -n com.actum.app/com.actum.MainActivity --es measure
+  heldout"`, wait for `{"done":100}` in `adb logcat -s ActumEval`, then
+  `adb logcat -d -s ActumEval > benchmarks/heldout-phone.log`.
+- Score: `python tools/heldout_score.py <files> --json benchmarks/heldout-<name>.json`.
+- Result so far, rules alone: answered 21/100, 21/21 right, fields 15/15, 34/100 overall
+  (silence counts right where no action is allowed). Gemma/hybrid: **not run yet**.
+- If Gradle hangs: stale daemons. `./gradlew --stop`, then build again.
+
+### Status / next steps
+
+1. [done] Debug APK built 2026-10-24 21:20, no INTERNET/NETWORK permission (aapt2 dump),
+   installed on Nothing A001T. Models being pushed (app was uninstalled, so they were gone).
+2. [done] Phone held-out run → `benchmarks/heldout.md`: rules 34, Gemma 69, hybrid 72 of
+   100; faults found (injection, negation, duplicates) recorded, not tuned against.
+   `docs/development-decisions.md`, `docs/devto-post.md` (draft), `site/index.html` written.
+3. [ ] Owner made repo `AM2004legend/ActIum`, first commit `b93b5c6` = import. Pending
+   owner OK: untrack `.sf/` (Salesforce cache, leaks org id), commit benchmark + docs.
+4. [dropped] Entire: owner cancelled it. Only category entered: Best Use of Gemma.
+5. [dropped] .tech: card not accepted at checkout. Use GitHub Pages for `site/` instead.
+6. [ ] DEV post draft (writing is weighted most). Deadline 2026-10-25 23:59 PDT.
