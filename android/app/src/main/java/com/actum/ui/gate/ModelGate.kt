@@ -4,6 +4,10 @@ import android.util.Log
 import com.actum.model.Envelope
 import com.actum.model.GemmaModel
 import com.actum.model.GemmaRouter
+import com.actum.model.Rules
+import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.jsonObject
+import kotlinx.serialization.json.jsonPrimitive
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -135,6 +139,50 @@ class ModelGate(
         }
     }
 
+    /**
+     * The held-out set (`assets/heldout.jsonl`): each case read once by Gemma alone, and by
+     * the rules alone; the hybrid is the rule's card where a rule reads the sentence, else
+     * Gemma's, as the app does for typed words. One JSON line a case and path under
+     * [EVAL_TAG]; `tools/heldout_score.py` turns the log into the numbers.
+     */
+    fun heldOut(cases: String) {
+        if (_state.value.busy) return
+        _state.value = State(busy = true)
+        scope.launch {
+            try {
+                val name = model.chosen.label
+                val ready = model.check() as? GemmaModel.State.Ready ?: return@launch say("$name is not on this phone.")
+                val loaded = router.load(ready.file, GemmaRouter.Processor.CPU, ready.kind.prompt)
+                Log.i(EVAL_TAG, """{"model":"$name","load_ms":$loaded}""")
+                val lines = cases.lines().filter { it.isNotBlank() }
+                lines.forEachIndexed { index, line ->
+                    val case = Json.parseToJsonElement(line).jsonObject
+                    val id = case.getValue("id").jsonPrimitive.content
+                    val text = case.getValue("text").jsonPrimitive.content
+                    say("Held-out ${index + 1} of ${lines.size}…")
+                    val ruleStart = android.os.SystemClock.elapsedRealtime()
+                    val rule = Rules.route(text)
+                    val ruleMillis = android.os.SystemClock.elapsedRealtime() - ruleStart
+                    Log.i(EVAL_TAG, HeldOut.line(id, "rules", rule?.let { listOf(it) }, ruleMillis))
+                    router.warmUp()
+                    val routed = router.route(text)
+                    val gemma = HeldOut.line(id, "gemma", routed)
+                    Log.i(EVAL_TAG, gemma)
+                    Log.i(EVAL_TAG, if (rule != null) HeldOut.line(id, "hybrid", listOf(rule), ruleMillis) else gemma.replace("\"path\":\"gemma\"", "\"path\":\"hybrid\""))
+                }
+                Log.i(EVAL_TAG, """{"done":${lines.size}}""")
+                _state.update { it.copy(status = "Held-out set done: read it with tools/heldout_score.py.") }
+            } catch (e: CancellationException) {
+                throw e
+            } catch (e: Throwable) {
+                Log.e(TAG, "held-out failed", e)
+                say("Failed: ${e.message ?: e.javaClass.simpleName}")
+            } finally {
+                _state.update { it.copy(busy = false) }
+            }
+        }
+    }
+
     private fun say(status: String) {
         Log.i(TAG, status)
         _state.update { it.copy(status = status) }
@@ -144,6 +192,7 @@ class ModelGate(
 
     companion object {
         const val TAG = "ActumM1"
+        const val EVAL_TAG = "ActumEval"
         const val SENTENCE = "kal 10 tay exam, rice kinte hobe, Rahul ke 500 dilam"
         const val RUNS = 5
         const val EXPECTED_ACTIONS = 3

@@ -87,6 +87,11 @@ class MainActivity : ComponentActivity() {
             }
         }
         val asked = intent?.getStringExtra(EXTRA_MEASURE) ?: return
+        if (asked == "heldout") {
+            measuring = true
+            (application as ActumApp).modelGate.heldOut(assets.open("heldout.jsonl").bufferedReader().use { it.readText() })
+            return
+        }
         if (asked == "eval") {
             measuring = true
             (application as ActumApp).modelGate.evaluate()
