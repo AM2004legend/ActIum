@@ -476,7 +476,10 @@ as prior work, then real commits for the new work. Ask the owner before every co
 2. [done] Phone held-out run → `benchmarks/heldout.md`: rules 34, Gemma 69, hybrid 72 of
    100; faults found (injection, negation, duplicates) recorded, not tuned against.
    `docs/development-decisions.md`, `docs/devto-post.md` (draft), `site/index.html` written.
-3. [done locally] History rebuilt on `main`: `8e2bd47` import (prior work, no `.sf/`),
+3. [done, pushed 2026-10-25] Repo public at github.com/AM2004legend/ActIum; Pages live at
+   am2004legend.github.io/ActIum/ (Settings → Pages → GitHub Actions). Demo:
+   youtube.com/shorts/bE6Lw7GLZKM. Left: owner publishes `docs/devto-post.md` on DEV
+   before 2026-10-25 23:59 PDT. History rebuilt on `main`: `8e2bd47` import (prior work, no `.sf/`),
    `8d8cc39` benchmark code, `62b88bf` phone results, `4745a68` README/docs/site. 329 unit
    tests pass. **Push failed: "Repository not found"** for
    `github.com/AM2004legend/ActIum`. Owner must create it (empty, no README), then
